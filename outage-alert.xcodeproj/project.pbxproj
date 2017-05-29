@@ -12,6 +12,9 @@
 		0B27E5F31E7726420012F20E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B27E5F11E7726420012F20E /* Main.storyboard */; };
 		0B27E5F51E7726420012F20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B27E5F41E7726420012F20E /* Assets.xcassets */; };
 		0B27E5F81E7726420012F20E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B27E5F61E7726420012F20E /* LaunchScreen.storyboard */; };
+		0B27E6021E776E7B0012F20E /* Tornado Siren-SoundBible.com-897026957.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0B27E6011E776E7B0012F20E /* Tornado Siren-SoundBible.com-897026957.wav */; };
+		0B27E6051E7778BD0012F20E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B27E6041E7778BD0012F20E /* MapKit.framework */; };
+		0B27E60C1E779E800012F20E /* DecisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B27E60B1E779E800012F20E /* DecisionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,10 @@
 		0B27E5F41E7726420012F20E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B27E5F71E7726420012F20E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B27E5F91E7726420012F20E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B27E6011E776E7B0012F20E /* Tornado Siren-SoundBible.com-897026957.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Tornado Siren-SoundBible.com-897026957.wav"; path = "Assets.xcassets/Tornado Siren-SoundBible.com-897026957.wav"; sourceTree = "<group>"; };
+		0B27E6041E7778BD0012F20E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		0B27E6061E7778D40012F20E /* outage-alert.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "outage-alert.entitlements"; sourceTree = "<group>"; };
+		0B27E60B1E779E800012F20E /* DecisionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DecisionViewController.swift; path = ../DecisionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B27E6051E7778BD0012F20E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +48,7 @@
 			children = (
 				0B27E5EC1E7726420012F20E /* outage-alert */,
 				0B27E5EB1E7726420012F20E /* Products */,
+				0B27E6031E7778BD0012F20E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,25 @@
 		0B27E5EC1E7726420012F20E /* outage-alert */ = {
 			isa = PBXGroup;
 			children = (
+				0B27E6061E7778D40012F20E /* outage-alert.entitlements */,
 				0B27E5ED1E7726420012F20E /* AppDelegate.swift */,
 				0B27E5EF1E7726420012F20E /* ViewController.swift */,
+				0B27E60B1E779E800012F20E /* DecisionViewController.swift */,
 				0B27E5F11E7726420012F20E /* Main.storyboard */,
 				0B27E5F41E7726420012F20E /* Assets.xcassets */,
 				0B27E5F61E7726420012F20E /* LaunchScreen.storyboard */,
+				0B27E6011E776E7B0012F20E /* Tornado Siren-SoundBible.com-897026957.wav */,
 				0B27E5F91E7726420012F20E /* Info.plist */,
 			);
 			path = "outage-alert";
+			sourceTree = "<group>";
+		};
+		0B27E6031E7778BD0012F20E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B27E6041E7778BD0012F20E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +118,17 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = PACJVE373K;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B27E5F81E7726420012F20E /* LaunchScreen.storyboard in Resources */,
+				0B27E6021E776E7B0012F20E /* Tornado Siren-SoundBible.com-897026957.wav in Resources */,
 				0B27E5F51E7726420012F20E /* Assets.xcassets in Resources */,
 				0B27E5F31E7726420012F20E /* Main.storyboard in Resources */,
 			);
@@ -138,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B27E5F01E7726420012F20E /* ViewController.swift in Sources */,
+				0B27E60C1E779E800012F20E /* DecisionViewController.swift in Sources */,
 				0B27E5EE1E7726420012F20E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "outage-alert/outage-alert.entitlements";
 				DEVELOPMENT_TEAM = PACJVE373K;
 				INFOPLIST_FILE = "outage-alert/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -274,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "outage-alert/outage-alert.entitlements";
 				DEVELOPMENT_TEAM = PACJVE373K;
 				INFOPLIST_FILE = "outage-alert/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
